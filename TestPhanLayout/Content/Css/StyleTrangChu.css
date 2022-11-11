@@ -1,0 +1,125 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+body {
+    padding: 0px;
+    margin: 0;
+}
+
+.container {
+    max-height: 800px;
+    margin: 0 auto;
+}
+
+    .container > header {
+        background-image: url('../IMG/Logo/quang cao1.jpg');
+        background-size: 100% 100%;
+        height: 0px;
+        padding-bottom: 25%;
+    }
+
+    .container > nav {
+        line-height: 40px;
+        font-size: 25px;
+        background-color: #ff6a00;
+        color: #ff6a00;
+        text-align: center;
+    }
+
+    .container > article {
+        min-height: 400px;
+        width: 75%;
+        background-color: #ff6a00;
+        float: left;
+    }
+
+    .container > aside {
+        min-height: 400px;
+        width: 25%;
+        background-color: lightgray;
+        float: right;
+    }
+
+    .container > footer {
+        border-top: 5px double orangered;
+        line-height: 50px;
+        background-color: lightcyan;
+        text-align: center;
+        font-variant: small-caps;
+        clear: both;
+    }
+
+    .container > nav > a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+        .container > nav > a:hover {
+            color: yellow;
+            text-decoration: underline;
+        }
+
+    .container > aside > ul > li > a {
+        color: darkblue;
+        font-size: 20px;
+        line-height: 30px;
+    }
+/*iframe[name=page] {
+    width:100%;
+    min-height:400px;
+}*/
+.VMenu {
+    padding: 0px;
+    margin: 5px;
+    list-style: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px gray;
+}
+
+    .VMenu a {
+        background: url('Hinh anh/B1.png') no-repeat 5px center;
+        background-image: url('../IMG/B1.png');
+        display: block;
+        border-bottom: 1px dotted #ff6a00;
+        color: #ff6a00;
+        font-variant: small-caps;
+        font-size: large;
+        text-decoration: none;
+        padding: 8px 5px 8px 30px;
+    }
+
+        .VMenu a:hover {
+            background: url('Hinh anh/B2.png') no-repeat 5px center;
+            background-image: url('../IMG/B2.png');
+            display: block;
+            border-bottom: 1px dotted #ffffff;
+            color: #ff6a00;
+            font-variant: small-caps;
+            font-size: large;
+            text-decoration: none;
+            padding: 8px 5px 8px 30px;
+        }
+

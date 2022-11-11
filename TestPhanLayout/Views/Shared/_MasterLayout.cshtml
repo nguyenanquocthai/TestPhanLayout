@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cầu Lông FB HufLit</title>
+    <link href="StyleLayoutWeb.css" rel="stylesheet" />
+    <link href="StyleMenu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/css/StyleTrangChu.css">
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <nav>
+            <img src="~/Content/IMG/Logo/cropped-LOGO-footer-1.png" style="width:90px; height:60px;" />
+            <a href="layout1.html" target="page">Trang chủ</a>
+            <img src="~/Content/IMG/Logo/home.png" style="width:30px; height:30px;" /> |
+            <a href="GioHang.html" target="page">Giỏ hàng</a>
+            <img src="~/Content/IMG/Logo/gio hang.png" style="width:40px; height:40px;" /> |
+            <a href="DangNhap.html" target="page">Đăng nhập</a>
+            @Html.ActionLink("Đăng nhập","Login","Home");
+            <img src="~/Content/IMG/Logo/key.png" style="width:40px; height:40px;" /> |
+            <a href="HoiDap.html" target="page">Liên hệ</a>
+            <img src="~/Content/IMG/Logo/user.png" style="width:40px; height:40px;" /> |
+            <input type="search" id="q" name="q" placeholder="Tìm kiếm sản phẩm" class="search-box__input--O34g" tabindex="1" value="" data-spm-anchor-id="a2o4n.home.search.i0.15b96afeQALdYa">
+            <button class="search-box__button--1oH7" tabindex="2" data-spm-click="gostr=/lzdpub.header.search;locaid=d_go">Tìm kiếm<img src="Hinh anh/search.png" style="width:30px; height:13px;" /></button>
+        </nav>
+        <article>
+            <!--<iframe src="TrangChu.html" name="page" scrolling="auto" frameborder="0"></iframe>-->
+            <img src="~/Content/IMG/Logo/backgound.jpg" style="width:1200px; height:737px;"/>
+        </article>
+        <aside>
+            <ul class="VMenu">
+                @Html.ActionLink("Giày cầu lông", "Product", "Product");
+                @Html.ActionLink("Áo cầu lông", "Ao", "Product");
+                @Html.ActionLink("Quần cầu lông", "Product", "Product");
+
+                <li><a href="Giay2(test).html">Giày cầu lông</a></li>
+                <li><a href="AoCauLong.html">Áo cầu lông</a></li>
+                <li><a href="QuanCauLong.html">Quần cầu lông</a></li>
+                <li><a href="VotCauLong.html">Vợt cầu lông</a></li>
+                <li><a href="Balo.html">Balo cầu lông</a></li>
+                <li><a href="BaoVot.html">Bao vợt cầu lông</a></li>
+                <li><a href="Cau.html">Cầu</a></li>
+                <li><a href="PhuKien.html">Phụ kiện cầu lông</a></li>
+            </ul>
+            <img src="~/Content/IMG/Logo/logo all.jpg" style="width:370px ; height:350px;"/>
+        </aside>
+        <footer>Huflit@2022.All right reserved</footer>
+    </div>
+</body>

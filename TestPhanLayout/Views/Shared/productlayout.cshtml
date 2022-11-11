@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/Css/StyleTrangChu.css/>
+
+    @Styles.Render("~/Content/Css")
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="~/Content/IMG/Logo/cropped-LOGO-footer-1.png" style="width:90px; height:60px;" />
+            <a href="layout1.html" target="page">Trang chủ</a>
+            <img src="~/Content/IMG/Logo/home.png" style="width:30px; height:30px;" /> |
+            <a href="GioHang.html" target="page">Giỏ hàng</a>
+            <img src="~/Content/IMG/Logo/gio hang.png" style="width:40px; height:40px;" /> |
+            <a href="DangNhap.html" target="page">Đăng nhập</a>
+            @Html.ActionLink("Đăng nhập", "Login", "Home");
+            <img src="~/Content/IMG/Logo/key.png" style="width:40px; height:40px;" /> |
+            <a href="HoiDap.html" target="page">Liên hệ</a>
+            <img src="~/Content/IMG/Logo/user.png" style="width:40px; height:40px;" /> |
+            <input type="search" id="q" name="q" placeholder="Tìm kiếm sản phẩm" class="search-box__input--O34g" tabindex="1" value="" data-spm-anchor-id="a2o4n.home.search.i0.15b96afeQALdYa">
+            <button class="search-box__button--1oH7" tabindex="2" data-spm-click="gostr=/lzdpub.header.search;locaid=d_go">Tìm kiếm<img src="Hinh anh/search.png" style="width:30px; height:13px;" /></button>
+        </nav>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        Huflit@2022.All right reserved
+    </footer>
+</body>
+</html>
